@@ -3,7 +3,7 @@
 (function () {
   var NAV = [
     { href: "index.html",         label: "Home" },
-    { href: "community.html",     label: "Community" },
+    { href: "community.html",     label: "Speaking &amp; Events" },
     { href: "new-ideas.html",     label: "New Ideas" },
     { href: "about.html",         label: "About" },
     { href: "workshops.html",     label: "Workshops" },
