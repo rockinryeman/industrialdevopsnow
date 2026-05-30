@@ -7,7 +7,8 @@
     { href: "new-ideas.html",     label: "New Ideas" },
     { href: "about.html",         label: "About" },
     { href: "workshop.html",      label: "Workshop" },
-    { href: "presentations.html", label: "Past Presentations" },
+    { href: "presentations.html", label: "Presentations" },
+    { href: "publications.html",  label: "Publications" },
     { href: "contact.html",       label: "Contact" },
     { href: "daily-smile.html",   label: "Daily Smile" }
   ];
