@@ -42,8 +42,11 @@ header.nav{position:sticky;top:0;background:var(--teal);z-index:20}
 .hero .eyebrow{color:#cfe9f4;letter-spacing:.22em;font-size:.85rem}
 .hero h1{font-size:clamp(2.2rem,5.6vw,3.8rem);margin:16px auto 18px;max-width:18ch}
 .hero p.lead{font-size:1.28rem;color:#eaf4fa;max-width:60ch;margin-left:auto;margin-right:auto}
-.hero.small{padding:78px 0 70px}
-.hero.small h1{margin-bottom:10px}
+/* Inner-page header: light, no big colored block */
+.hero.small{background:#fff;color:var(--ink);padding:52px 0 38px;border-bottom:1px solid var(--line)}
+.hero.small .eyebrow{color:var(--teal)}
+.hero.small h1{color:var(--ink);margin-bottom:10px}
+.hero.small p.lead{color:var(--ink-soft)}
 .meta-row{display:flex;flex-wrap:wrap;gap:12px;margin:30px auto 32px;justify-content:center}
 .chip{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.25);
   padding:8px 16px;border-radius:999px;font-size:.9rem;font-weight:600}
