@@ -9,8 +9,7 @@
     { href: "workshops.html",     label: "Workshops" },
     { href: "presentations.html", label: "Presentations" },
     { href: "publications.html",  label: "Publications" },
-    { href: "contact.html",       label: "Contact" },
-    { href: "daily-smile.html",   label: "Daily Smile" }
+    { href: "contact.html",       label: "Contact" }
   ];
 
   // current page filename (default to index.html)
