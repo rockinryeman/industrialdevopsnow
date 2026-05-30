@@ -16,22 +16,23 @@ img{max-width:100%;display:block}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
 .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:700;color:var(--teal)}
 
-/* ---------- Header / nav ---------- */
-header.nav{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);
-  border-bottom:1px solid var(--line);z-index:20}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
-.brand{display:flex;align-items:baseline;gap:2px;font-weight:800;color:var(--ink);font-size:1.05rem}
-.brand b{color:var(--teal)}
-.brand .tm{font-size:.6rem;color:var(--ink-soft);font-weight:600}
-.nav nav{display:flex;flex-wrap:wrap}
-.nav nav a{margin-left:20px;color:var(--ink-soft);font-size:.95rem;font-weight:600}
-.nav nav a:hover,.nav nav a.active{color:var(--teal);text-decoration:none}
-.nav .menu-btn{display:none;background:none;border:0;font-size:1.5rem;color:var(--ink);cursor:pointer}
-@media(max-width:780px){
-  .nav nav{display:none;position:absolute;top:66px;left:0;right:0;background:#fff;
-    flex-direction:column;border-bottom:1px solid var(--line);padding:10px 24px}
+/* ---------- Header / nav (full-width teal band, centered white links) ---------- */
+header.nav{position:sticky;top:0;background:var(--teal);z-index:20}
+.nav .wrap{display:flex;align-items:center;justify-content:center;height:64px;position:relative}
+.brand{display:none}              /* original has no wordmark — centered links only */
+.nav nav{display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
+.nav nav a{padding:0 22px;color:#fff;font-size:.98rem;font-weight:500;text-transform:uppercase;
+  letter-spacing:.06em}
+.nav nav a:hover{color:#fff;text-decoration:none;opacity:.85}
+.nav nav a.active{font-weight:800;text-decoration:none}
+.nav .menu-btn{display:none;background:none;border:0;font-size:1.6rem;color:#fff;cursor:pointer;
+  position:absolute;right:24px}
+@media(max-width:880px){
+  .nav .wrap{justify-content:flex-start}
+  .nav nav{display:none;position:absolute;top:64px;left:0;right:0;background:var(--teal);
+    flex-direction:column;align-items:center;padding:12px 24px;z-index:30}
   .nav nav.open{display:flex}
-  .nav nav a{margin:8px 0}
+  .nav nav a{margin:9px 0;padding:0}
   .nav .menu-btn{display:block}
 }
 
@@ -46,6 +47,21 @@ header.nav{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filte
 .meta-row{display:flex;flex-wrap:wrap;gap:12px;margin:30px auto 32px;justify-content:center}
 .chip{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.25);
   padding:8px 16px;border-radius:999px;font-size:.9rem;font-weight:600}
+
+/* ---------- Split hero (book cover + tagline, like the original) ---------- */
+.split{background:var(--panel);border-bottom:1px solid var(--line);padding:64px 0}
+.split .wrap{display:grid;grid-template-columns:minmax(0,360px) 1fr;gap:54px;align-items:center}
+.split .cover img{border-radius:8px;box-shadow:0 12px 36px rgba(0,0,0,.22);width:100%}
+.split .copy .eyebrow{font-size:.95rem;letter-spacing:.18em}
+.split .copy h1{font-size:clamp(2.1rem,5vw,3.3rem);margin:8px 0 14px}
+.split .copy .tagsub{text-transform:uppercase;letter-spacing:.14em;font-weight:700;
+  color:var(--teal);font-size:1rem;margin-bottom:18px}
+.split .copy p{font-size:1.2rem;color:var(--ink-soft);max-width:46ch;margin-bottom:26px}
+@media(max-width:820px){
+  .split .wrap{grid-template-columns:1fr;gap:30px;text-align:center;justify-items:center}
+  .split .cover{max-width:280px}
+  .split .copy p{margin-left:auto;margin-right:auto}
+}
 
 /* ---------- Full-width banner band (stacked, centered text) ---------- */
 .band{padding:84px 0;text-align:center;border-bottom:1px solid var(--line)}
