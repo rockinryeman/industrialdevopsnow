@@ -6,7 +6,7 @@
     { href: "community.html",     label: "Community" },
     { href: "new-ideas.html",     label: "New Ideas" },
     { href: "about.html",         label: "About" },
-    { href: "workshop.html",      label: "Workshop" },
+    { href: "workshops.html",     label: "Workshops" },
     { href: "presentations.html", label: "Presentations" },
     { href: "publications.html",  label: "Publications" },
     { href: "contact.html",       label: "Contact" },
@@ -16,6 +16,8 @@
   // current page filename (default to index.html)
   var path = location.pathname.split("/").pop() || "index.html";
   if (path === "") path = "index.html";
+  // the AI workshop detail page lives under the Workshops tab
+  if (path === "workshop.html") path = "workshops.html";
 
   var links = NAV.map(function (n) {
     var active = (n.href === path) ? ' class="active"' : "";
