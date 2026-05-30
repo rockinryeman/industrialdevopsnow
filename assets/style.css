@@ -47,6 +47,7 @@ header.nav{position:sticky;top:0;background:var(--teal);z-index:20}
 .hero.small .eyebrow{color:var(--teal)}
 .hero.small h1{color:var(--ink);margin-bottom:10px}
 .hero.small p.lead{color:var(--ink-soft)}
+.hero.small .chip{background:var(--panel);border:1px solid var(--line);color:var(--ink-soft)}
 .meta-row{display:flex;flex-wrap:wrap;gap:12px;margin:30px auto 32px;justify-content:center}
 .chip{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.25);
   padding:8px 16px;border-radius:999px;font-size:.9rem;font-weight:600}
@@ -84,6 +85,8 @@ header.nav{position:sticky;top:0;background:var(--teal);z-index:20}
   padding:14px 28px;border-radius:8px;font-size:1rem;border:0;cursor:pointer}
 .btn:hover{background:#ffb920;text-decoration:none}
 .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.45);color:#fff;margin-left:10px}
+.btn.outline{background:#fff;border:1px solid var(--teal);color:var(--teal);margin-left:10px}
+.btn.outline:hover{background:var(--panel)}
 .btn.teal{background:var(--teal);color:#fff}
 .btn.teal:hover{background:var(--teal-dark)}
 
