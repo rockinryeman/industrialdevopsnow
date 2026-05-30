@@ -134,6 +134,8 @@ section .sub{color:var(--ink-soft);font-size:1.08rem;max-width:66ch;margin-botto
 .event .date small{display:block;color:var(--ink-soft);font-weight:500}
 .event h3{font-size:1.12rem;margin-bottom:4px}
 .event .place{color:var(--ink-soft);font-size:.95rem}
+.event .badge{display:inline-block;background:var(--teal);color:#fff;font-size:.72rem;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px;margin-bottom:8px}
 @media(max-width:560px){.event{grid-template-columns:1fr;gap:6px}}
 
 /* ---------- Forms ---------- */
